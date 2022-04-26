@@ -4,7 +4,8 @@
 
 > .Net 5.0
 
-> ![.NET Build](https://github.com/rakesh-kumar-t/jwtAuth-Angular-DotnetCore/workflows/.NET/badge.svg) > ![Angular Build](https://github.com/rakesh-kumar-t/jwtAuth-Angular-DotnetCore/workflows/Angular%20Build/badge.svg)
+> ![.NET Build](https://github.com/rakesh-kumar-t/jwtAuth-Angular-DotnetCore/workflows/.NET/badge.svg)
+> ![Angular Build](https://github.com/rakesh-kumar-t/jwtAuth-Angular-DotnetCore/workflows/Angular%20Build/badge.svg)
 
 ### Angular app with dotnet core web api and mssql as backend (Code first approach)
 
