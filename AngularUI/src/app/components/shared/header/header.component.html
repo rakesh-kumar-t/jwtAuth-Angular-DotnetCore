@@ -1,0 +1,23 @@
+<mat-toolbar color="primary">
+  <span class="text-white">jwtAuthUI</span>
+  <span class="Hdspacer"></span>
+
+  <button
+    mat-raised-button
+    color="accent"
+    class="text-white"
+    (click)="openLogin()"
+    *ngIf="!isLoggedIn"
+  >
+    Login
+  </button>
+  <button
+    mat-flat-button
+    *ngIf="isLoggedIn"
+    class="text-white"
+    (click)="logout()"
+    color="accent"
+  >
+    Logout
+  </button>
+</mat-toolbar>

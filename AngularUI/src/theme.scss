@@ -1,0 +1,45 @@
+@use "@angular/material" as mat;
+
+$jwtAuthUI-palette: (
+  50: #6200ee,
+  100: #c5cae9,
+  200: #03dac6,
+  300: #7986cb,
+  400: #a80505,
+  500: #a80505,
+  600: #a80505,
+  700: #a80505,
+  800: #a80505,
+  900: #b00020,
+  contrast: (
+    50: #3700b3,
+    100: rgba(black, 0.87),
+    200: #018786,
+    300: white,
+    400: #a80505,
+    500: #a80505,
+    600: #a80505,
+    700: #a80505,
+    800: #a80505,
+    900: #b00020,
+  ),
+);
+@include mat.core();
+$my-primary: mat.define-palette($jwtAuthUI-palette, 50);
+$my-accent: mat.define-palette($jwtAuthUI-palette, 200);
+// $my-warn:mat-define-palette($jwtAuthUI-palette,400)
+
+// The "warn" palette is optional and defaults to red if not specified.
+$my-warn: mat.define-palette($jwtAuthUI-palette, 900);
+
+$my-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $my-primary,
+      accent: $my-accent,
+      warn: $my-warn,
+    ),
+  )
+);
+
+@include mat.all-component-themes($my-theme);
